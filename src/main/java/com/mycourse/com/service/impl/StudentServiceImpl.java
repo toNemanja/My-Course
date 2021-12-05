@@ -31,6 +31,7 @@ public class StudentServiceImpl implements StudentService {
 
     @Override
     public StudentDTO save(StudentDTO dto) {
+        System.out.println("Prva izmena");
         Student student = this.studentMapper.transformToEntity(dto);
         return this.studentMapper.transformToDTO(studentRepo.save(student));
     }
