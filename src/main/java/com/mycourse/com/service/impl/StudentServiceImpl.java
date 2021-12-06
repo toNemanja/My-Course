@@ -36,6 +36,7 @@ public class StudentServiceImpl implements StudentService {
         System.out.println("Treca izmena");
         System.out.println("Cetvrta izmena");
         System.out.println("Peta izmena");
+        System.out.println("Sesta izmena");
         Student student = this.studentMapper.transformToEntity(dto);
         return this.studentMapper.transformToDTO(studentRepo.save(student));
     }
